@@ -36,13 +36,41 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="3561466a-3b71-41d6-b6a0-be2e38db4345">
-    <name>Аттракцион</name>
+    <name>ВидАттракциона</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Вид аттракциона</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.ВидыАттракционов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2e8e1ddf-3f00-4b61-adab-270e7778bcfa">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cc36acd0-1ff1-43c2-8463-280118b6dfff">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

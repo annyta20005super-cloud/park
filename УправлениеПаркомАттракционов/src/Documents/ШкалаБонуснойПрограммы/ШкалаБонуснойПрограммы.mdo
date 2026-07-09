@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="000b5817-aaef-47ee-8ec4-35d32ea9fbf7">
+  <producedTypes>
+    <objectType typeId="12454e0d-2233-4189-a438-f6a825f75305" valueTypeId="07da2e0d-f0d7-44e4-9797-a58355078db8"/>
+    <refType typeId="166cee2c-4b2c-42a9-a89e-ea56203314e6" valueTypeId="3cf0775e-c239-4713-b13e-47e045d7ff7d"/>
+    <selectionType typeId="88421b35-4b34-4f3f-b5f7-3f4a0cd0da4e" valueTypeId="84863c32-ce6a-446b-ba8a-103c48ca5e5c"/>
+    <listType typeId="48cba8f9-126b-4516-886a-66fdf0430990" valueTypeId="f9c3ae45-4f3f-46b5-9675-2f58f29eaef9"/>
+    <managerType typeId="8c0a182e-6760-420a-b4e8-fa205224f450" valueTypeId="b1a193dd-abdf-4d05-9f81-2c5b132c954c"/>
+  </producedTypes>
+  <name>ШкалаБонуснойПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шкала бонусной программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ШкалаБонуснойПрограммы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Шкала бонусной программы</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.АктуальнаяШкалаБонуснойПрограммы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="0e27aa18-ea69-4727-88eb-2f43f2891c07">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64d87fe0-2bf5-47a4-899e-69804d706d3d">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c3a11a5b-9946-43e5-9dcd-66c7480720aa">
+    <producedTypes>
+      <objectType typeId="48aecd2b-b312-44ce-a121-e77e127f2d33" valueTypeId="871db4f0-5632-4fb5-a410-fee4180a3af1"/>
+      <rowType typeId="915418e0-4bdf-4219-a244-af9935f29d28" valueTypeId="4e836586-0857-4987-9baa-fa4121ddd927"/>
+    </producedTypes>
+    <name>Диапазоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диапазоны</value>
+    </synonym>
+    <attributes uuid="3c5f8981-8292-41b8-9e0c-fc5f8dabf52a">
+      <name>НижняяГраница</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нижняя граница</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value></value>
+      </format>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="10aa96e2-b3bb-4f4d-9bbb-ee77ad8406a5">
+      <name>ВерхняяГраница</name>
+      <synonym>
+        <key>ru</key>
+        <value>Верхняя граница</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3a6e4e64-aab4-43b4-ab7d-60262d3726b1">
+      <name>ПроцентНакопления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент накопления</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

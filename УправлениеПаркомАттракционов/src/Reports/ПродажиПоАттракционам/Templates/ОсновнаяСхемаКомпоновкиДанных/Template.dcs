@@ -7,8 +7,8 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Аттракцион</dataPath>
-			<field>Аттракцион</field>
+			<dataPath>ВидАттракциона</dataPath>
+			<field>ВидАттракциона</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
@@ -17,9 +17,22 @@
 			<dataPath>СуммаОборот</dataPath>
 			<field>СуммаОборот</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАттракцион</dataPath>
+			<field>ВидАттракцион</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид аттракцион</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ПродажиОбороты.Аттракцион КАК Аттракцион,
+	ПродажиОбороты.ВидАттракциона КАК ВидАттракцион,
 	ПродажиОбороты.СуммаОборот КАК СуммаОборот
 ИЗ
 	РегистрНакопления.Продажи.Обороты КАК ПродажиОбороты</query>
@@ -82,7 +95,7 @@
 		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Аттракцион</dcsset:field>
+					<dcsset:field>ВидАттракцион</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаОборот</dcsset:field>

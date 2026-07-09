@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f5dfb9c-7d5d-4d2e-aaaa-3bd4549e51d1">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f5dfb9c-7d5d-4d2e-aaaa-3bd4549e51d1">
   <producedTypes>
     <objectType typeId="350c15d2-4082-470e-ab5a-056f8817d6e0" valueTypeId="ce38ec3c-7e07-486a-8a5b-18a34280af3d"/>
     <refType typeId="d950e92f-06e9-411b-8309-1812f9c5d1bc" valueTypeId="b56526ca-f524-40ab-beb3-646d0c087038"/>
@@ -34,4 +34,44 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Аттракционы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e44b2a96-bbac-434a-886c-eb67c445f1f6">
+    <name>ВидАттракциона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид аттракциона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыАттракционов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="75d05b2a-83f3-4066-8912-260530552a94">
+    <name>Фото</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a4a46ed1-0595-4553-9e3a-b6fa1e02ec1c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
