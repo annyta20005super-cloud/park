@@ -281,6 +281,7 @@
         <viewStatusLocation>None</viewStatusLocation>
         <searchControlLocation>None</searchControlLocation>
         <autoMaxCardHeight>true</autoMaxCardHeight>
+        <showCommandBarNeedDereferenced>true</showCommandBarNeedDereferenced>
       </autoTable>
       <width>50</width>
       <autoMaxWidth>true</autoMaxWidth>

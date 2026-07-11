@@ -29,8 +29,8 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПродажаБилета.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ПродажаБилета.Form.ФормаСписка</defaultListForm>
-  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
+  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <registerRecords>AccumulationRegister.БонусныеБаллыКлиентов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -155,7 +155,7 @@
       <value>Ответственный</value>
     </synonym>
     <type>
-      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ПА_Пользователи</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -275,18 +275,17 @@
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
   <templates uuid="6eafa2a2-d2ad-47ad-b6ae-fe66af1bca49">
-    <name>Билет</name>
+    <name>ПФ_MXL_Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
   </templates>
-  <commands uuid="4c3074b2-e854-43c0-9231-e0d6cb7281de">
-    <name>Билет</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.ПродажаБилета</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Print</picture>
-    </picture>
-  </commands>
+  <templates uuid="e88b644a-0774-4e3c-a3a2-ab3410c050dd">
+    <name>ПФ_MXL_Реклама</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реклама</value>
+    </synonym>
+  </templates>
 </mdclass:Document>
