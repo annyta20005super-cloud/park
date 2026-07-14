@@ -83,7 +83,7 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:ReferenceValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <typeReductionMode>DeleteData</typeReductionMode>
   </dimensions>
   <forms uuid="d1beef4e-9c78-49f5-9e52-1568fadf861d">

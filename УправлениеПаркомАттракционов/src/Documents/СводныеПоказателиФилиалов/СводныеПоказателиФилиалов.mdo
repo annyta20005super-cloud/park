@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc29d2d3-c948-4ccf-89ec-b474b4e4e898">
+  <producedTypes>
+    <objectType typeId="366210e6-418e-4934-b488-d16ccfe3f8e5" valueTypeId="a54031fa-af94-47e1-93ef-51e229fda485"/>
+    <refType typeId="86682a39-e660-4ea8-9f1f-ced855c61008" valueTypeId="5a7a003f-26cb-4198-b31b-92e8ff03deec"/>
+    <selectionType typeId="68bd99c2-ded6-4bda-a160-db8ff8de2528" valueTypeId="c71900d7-e7c2-4d74-b1d4-b21e1f403204"/>
+    <listType typeId="3b00f751-9301-4d10-ad88-11e7efad33a3" valueTypeId="04fce38b-37bc-4987-bd7b-56fa24923e5d"/>
+    <managerType typeId="0a2120df-bf1a-4095-89cf-d6f9c2d1a067" valueTypeId="66993450-3ce2-4ed8-bf15-021e707c92db"/>
+  </producedTypes>
+  <name>СводныеПоказателиФилиалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводные показатели филиалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СводныеПоказателиФилиалов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ежемесячные сводные показатели</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СводныеПоказателиФилиалов.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СводныеПоказателиФилиалов.Form.ФормаСписка</defaultListForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="d8107a30-ffef-4e51-98b3-5ee3725298ce">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="235032fd-92fc-4a6a-84b5-270cf932b5a9">
+    <name>НачалоМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало месяца</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da3a4d31-34f4-4990-9b19-9a0e163b1a74">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="317f2f2a-12f6-4076-84b7-a2d9019e4b3d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="36b511eb-9143-40ab-bfa1-468de6af56e3">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7fff2744-e085-40cf-911b-4ad743700b5a">
+    <producedTypes>
+      <objectType typeId="87d79953-7608-40f2-ab96-19fdbc90292c" valueTypeId="285aad33-e1bb-4689-b9bd-90eecf5f6a8c"/>
+      <rowType typeId="009205e7-5652-4fa2-a8a9-de8c4f5d1582" valueTypeId="b806e2f9-dae2-4e9b-95b8-de4cb4ec84ff"/>
+    </producedTypes>
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+    <attributes uuid="952b28d2-cf74-4b07-b0e5-27dc1dbd6851">
+      <name>Филиал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Филиал</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Филиалы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="28818352-9e20-4e31-ab16-3bdbbafe6572">
+      <name>Доход</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доход</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="15225bc6-5e56-41fb-88b1-9232440abf57">
+      <name>Расход</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расход</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

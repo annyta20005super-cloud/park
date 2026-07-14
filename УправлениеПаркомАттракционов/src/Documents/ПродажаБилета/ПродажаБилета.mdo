@@ -155,10 +155,26 @@
       <value>Ответственный</value>
     </synonym>
     <type>
-      <types>CatalogRef.ПА_Пользователи</types>
+      <types>CatalogRef.Пользователи</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0f4327ed-615e-4458-b3e1-dcf6b3098b4a">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Филиалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -288,4 +304,13 @@
       <value>Реклама</value>
     </synonym>
   </templates>
+  <commands uuid="15e6541c-766b-44f7-989f-652452bc5b21">
+    <name>СписокПродажиБилетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа билетов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
 </mdclass:Document>

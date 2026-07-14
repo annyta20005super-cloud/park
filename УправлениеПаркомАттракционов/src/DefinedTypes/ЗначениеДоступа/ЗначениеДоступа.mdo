@@ -17,6 +17,7 @@
     <types>CatalogRef.ГруппыВнешнихПользователей</types>
     <types>CatalogRef.ГруппыПользователей</types>
     <types>EnumRef.ДополнительныеЗначенияДоступа</types>
+    <types>CatalogRef.Филиалы</types>
     <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
     <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
     <types>CatalogRef.Пользователи</types>

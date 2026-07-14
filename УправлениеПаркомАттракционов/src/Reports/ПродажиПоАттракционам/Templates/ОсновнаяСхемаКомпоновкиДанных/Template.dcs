@@ -38,8 +38,12 @@
 			<dataPath>Номенклатура</dataPath>
 			<field>Номенклатура</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Филиал</dataPath>
+			<field>Филиал</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
+		<query>ВЫБРАТЬ Разрешенные
 	ПродажиОбороты.ВидАттракциона КАК ВидАттракцион,
 	ПродажиОбороты.СуммаОборот КАК СуммаОборот
 ИЗ

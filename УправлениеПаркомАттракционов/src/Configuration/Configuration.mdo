@@ -638,6 +638,7 @@
   <roles>Role.БазовыеПраваБСП</roles>
   <roles>Role.БазовыеПраваВнешнихПользователейБСП</roles>
   <roles>Role.ВыводНаПринтерФайлБуферОбмена</roles>
+  <roles>Role.ДиректорФилиала</roles>
   <roles>Role.ДобавлениеИзменениеВариантовОтчетов</roles>
   <roles>Role.ДобавлениеИзменениеВидовКонтактнойИнформации</roles>
   <roles>Role.ДобавлениеИзменениеВнешнихПользователей</roles>
@@ -828,7 +829,6 @@
   <commonModules>CommonModule.ОценкаПроизводительностиКлиентСервер</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиПовтИсп</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиСлужебный</commonModules>
-  <commonModules>CommonModule.ПА_Пользователи</commonModules>
   <commonModules>CommonModule.ПодключаемыеКоманды</commonModules>
   <commonModules>CommonModule.ПодключаемыеКомандыВызовСервера</commonModules>
   <commonModules>CommonModule.ПодключаемыеКомандыГлобальный</commonModules>
@@ -1039,6 +1039,8 @@
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтПодчиненного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьБезопасныйРежимПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьБезопасныйРежимПередЗаписьюНабораЗаписи</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокументаПА</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалениемПА</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписьюНабораЗаписей</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписьюНабораЗаписейРегистраРасчета</eventSubscriptions>
@@ -1146,7 +1148,17 @@
   <commonCommands>CommonCommand.ВсеФайлы</commonCommands>
   <commonCommands>CommonCommand.ГлавныеОтчеты</commonCommands>
   <commonCommands>CommonCommand.ДополнительныеОбработкиАдминистрирование</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОбработкиГлавное</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОбработкиПерсонал</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОбработкиПосещения</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОбработкиПродажи</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОбработкиСправочники</commonCommands>
   <commonCommands>CommonCommand.ДополнительныеОтчетыАдминистрирование</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОтчетыГлавное</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОтчетыПерсонал</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОтчетыПосещения</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОтчетыПродажи</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеОтчетыСправочники</commonCommands>
   <commonCommands>CommonCommand.ДополнительныеСведенияКоманднаяПанель</commonCommands>
   <commonCommands>CommonCommand.ЗарегистрироватьПриложениеВOAuthСервисе</commonCommands>
   <commonCommands>CommonCommand.НастроитьПрава</commonCommands>
@@ -1360,10 +1372,12 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
+  <catalogs>Catalog.Филиалы</catalogs>
   <catalogs>Catalog.ХранилищеДвоичныхДанных</catalogs>
   <documents>Document.ПланированиеОтсутствия</documents>
   <documents>Document.ПосещениеАттракциона</documents>
   <documents>Document.ПродажаБилета</documents>
+  <documents>Document.СводныеПоказателиФилиалов</documents>
   <documents>Document.УстановкаЦенНоменклатуры</documents>
   <documents>Document.ШкалаБонуснойПрограммы</documents>
   <enums>Enum.ВариантыОтображенияМеток</enums>

@@ -11,6 +11,5 @@
   <content>Enum.РолиПользователей</content>
   <content>Role.ПА_ПолныеПрава</content>
   <content>SessionParameter.ПА_ТекущийПользователь</content>
-  <content>CommonModule.ПА_Пользователи</content>
   <content>CommonForm.МониторРуководителя</content>
 </mdclass:Subsystem>

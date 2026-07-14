@@ -24,4 +24,7 @@
   <content>AccumulationRegister.АктивныеПосещения</content>
   <content>Role.Кассир</content>
   <content>CommonCommand.ОтчетыПоПродажам</content>
+  <content>CommonCommand.ДополнительныеОбработкиПродажи</content>
+  <content>CommonCommand.ДополнительныеОтчетыПродажи</content>
+  <content>Document.СводныеПоказателиФилиалов</content>
 </mdclass:Subsystem>

@@ -35,6 +35,20 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <dimensions uuid="941927b3-b64d-476a-b9c3-563bf25dae14">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Филиалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
   <dimensions uuid="3561466a-3b71-41d6-b6a0-be2e38db4345">
     <name>ВидАттракциона</name>
     <synonym>

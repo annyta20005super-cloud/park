@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="011c523d-bb68-4385-83a0-f502e6bf7f25">
+  <producedTypes>
+    <objectType typeId="74406a16-2016-48ae-a30e-946487e486c7" valueTypeId="d1b8dfce-2574-4a02-b114-9f4663da5352"/>
+  </producedTypes>
+  <name>ВыгрузкаНаСайт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка на сайт (внешняя)</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="44bea8e5-a04c-4af2-8291-97021df6a948"/>
+  <defaultForm>ExternalDataProcessor.ВыгрузкаНаСайт.Form.Форма</defaultForm>
+  <forms uuid="e57d7c0f-396b-4976-97d0-118bee50b3c7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e5522a24-b47e-4e88-8a75-cacdd0f4d972">
+    <name>НастройкаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка выгрузки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>

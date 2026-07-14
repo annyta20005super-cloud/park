@@ -18,6 +18,7 @@
     <types>CatalogObject.ГруппыВнешнихПользователей</types>
     <types>ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</types>
     <types>CatalogObject.ДополнительныеОтчетыИОбработки</types>
+    <types>CatalogObject.Филиалы</types>
     <types>CatalogObject.ВнешниеПользователи</types>
     <types>CatalogObject.ЗначенияСвойствОбъектов</types>
     <types>CatalogObject.ЗначенияСвойствОбъектовИерархия</types>

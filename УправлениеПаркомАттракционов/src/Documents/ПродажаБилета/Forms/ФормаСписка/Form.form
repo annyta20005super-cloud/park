@@ -171,6 +171,42 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>Филиал</name>
+      <id>40</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Филиал</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ФилиалРасширеннаяПодсказка</name>
+        <id>42</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ФилиалКонтекстноеМеню</name>
+        <id>41</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Auto</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>Клиент</name>
       <id>25</id>
       <visible>true</visible>
@@ -279,6 +315,42 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>Ответственный</name>
+      <id>37</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Ответственный</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ОтветственныйРасширеннаяПодсказка</name>
+        <id>39</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОтветственныйКонтекстноеМеню</name>
+        <id>38</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Auto</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>Ссылка</name>
       <id>31</id>
       <visible>true</visible>
@@ -318,6 +390,10 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>Selection</event>
+      <name>СписокВыбор</name>
+    </handlers>
     <handlers>
       <event>OnActivateRow</event>
       <name>СписокПриАктивизацииСтроки</name>
@@ -484,25 +560,26 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	ПродажаБилета.Ссылка,
-	ПродажаБилета.ПометкаУдаления,
-	ПродажаБилета.Номер,
-	ПродажаБилета.Дата,
-	ПродажаБилета.Проведен,
-	ПродажаБилета.УдалитьНоменклатура,
-	ПродажаБилета.Клиент,
-	ПродажаБилета.УдалитьЦена,
-	ПродажаБилета.БаллыКСписанию,
-	ПродажаБилета.СуммаДокумента,
-	ПродажаБилета.Комментарий,
-	ПродажаБилета.Ответственный,
+	ПродажаБилета.Ссылка КАК Ссылка,
+	ПродажаБилета.ПометкаУдаления КАК ПометкаУдаления,
+	ПродажаБилета.Номер КАК Номер,
+	ПродажаБилета.Дата КАК Дата,
+	ПродажаБилета.Проведен КАК Проведен,
+	ПродажаБилета.УдалитьНоменклатура КАК УдалитьНоменклатура,
+	ПродажаБилета.Клиент КАК Клиент,
+	ПродажаБилета.УдалитьЦена КАК УдалитьЦена,
+	ПродажаБилета.БаллыКСписанию КАК БаллыКСписанию,
+	ПродажаБилета.СуммаДокумента КАК СуммаДокумента,
+	ПродажаБилета.Комментарий КАК Комментарий,
+	ПродажаБилета.Ответственный КАК Ответственный,
 	ВЫБОР
 		КОГДА НаличиеФайлов.ЕстьФайлы ЕСТЬ NULL
 			ТОГДА 0
 		КОГДА НаличиеФайлов.ЕстьФайлы
 			ТОГДА 1
 		ИНАЧЕ 0
-	КОНЕЦ КАК ЕстьФайлы
+	КОНЕЦ КАК ЕстьФайлы,
+	ПродажаБилета.Филиал КАК Филиал
 ИЗ
 	Документ.ПродажаБилета КАК ПродажаБилета
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
@@ -572,6 +649,10 @@
             </content>
           </localValue>
         </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Филиал</dataPath>
+        <field>Филиал</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ПозицииПродажи</dataPath>

@@ -9,6 +9,7 @@
     <value>Владелец значений ключей доступа</value>
   </synonym>
   <type>
+    <types>DocumentRef.ПродажаБилета</types>
     <types>CatalogRef.ПапкиФайлов</types>
     <types>CatalogRef.ГруппыДоступа</types>
     <types>CatalogRef.ВнешниеПользователи</types>
@@ -16,9 +17,11 @@
     <types>CatalogRef.ПользовательскиеНастройкиОтчетов</types>
     <types>CatalogRef.ЗначенияСвойствОбъектов</types>
     <types>CatalogRef.ГруппыВнешнихПользователей</types>
+    <types>CatalogRef.Филиалы</types>
     <types>CatalogRef.Файлы</types>
     <types>CatalogRef.РассылкиОтчетов</types>
     <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    <types>DocumentRef.СводныеПоказателиФилиалов</types>
     <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
     <types>CatalogRef.ВариантыОтчетов</types>
     <types>CatalogRef.Пользователи</types>
