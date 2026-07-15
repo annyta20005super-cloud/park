@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8500d65a-40ab-4f02-a01a-b45e7247be09">
+  <name>errors</name>
+  <synonym>
+    <key>ru</key>
+    <value>Errors</value>
+  </synonym>
+  <rootURL>errors</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="67c41402-8b23-47b6-be84-8086578445dc">
+    <name>getInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get info</value>
+    </synonym>
+    <template>/getInfo</template>
+    <methods uuid="d56ed842-371d-4bc5-8df3-62b387d789bf">
+      <name>КакОбработатьОшибку</name>
+      <synonym>
+        <key>ru</key>
+        <value>Как обработать ошибку</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>КакОбработатьОшибку</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="66e99b3d-c1b9-410a-8321-2ca4791a880f">
+    <name>pushReport</name>
+    <synonym>
+      <key>ru</key>
+      <value>Push report</value>
+    </synonym>
+    <template>/pushReport</template>
+    <methods uuid="b36fd717-c48a-4ec6-b0da-787948f50dc0">
+      <name>СохранитьАрхив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сохранить архив</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>СохранитьАрхив</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="92d65f3b-f208-4bfd-b78c-266dd02a6951">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="720c93cc-8e08-4d24-a66e-5a6f6a248de5">
+      <name>ПроверитьДоступность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверить доступность</value>
+      </synonym>
+      <handler>ПроверитьДоступность</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
